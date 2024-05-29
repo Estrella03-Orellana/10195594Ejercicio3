@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_10195594Ejercicio3.Promedio"
+             Title="Promedio">
+    <!--<Summary>
+    <Createddate> 25 may. 2024</Createddate>
+    <company> Bazar Rosario </company>
+    <lastmodificationdate> 29 may. 2024</lastmodificationdate>
+    <lastmodificationdescription>
+           Ultima modificación. Agregue la documentacion XML al programa y la validación de los campos
+    </lastmodificationdescription>
+    <lastmodifierautor> Estrella Orellana</lastmodifierautor>
+</Summary>-->
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+            <Image Source="notas.jpg" HeightRequest="250" HorizontalOptions="Center"/>
+            <Label  Text="Ejercicio 3 : dada las 5 calificaciones de un alumno a lo largo del semestre, muestre el promedio de sus calificaciones "
+                         VerticalOptions="Center" 
+                         HorizontalOptions="Center" />
+              <Entry Placeholder="Calificación 1 " x:Name="Not1"/>
+            <Entry Placeholder="Calificación 2 " x:Name="Not2"/>
+            <Entry Placeholder="Calificación 3 " x:Name="Not3"/>
+            <Entry Placeholder="Calificación 4 " x:Name="Not4"/>
+            <Entry Placeholder="Calificación 5 " x:Name="Not5"/>
+            <Entry Placeholder="Promedio " x:Name="EntryP"/>
+            <Button Text="Cálcular Promedio" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
